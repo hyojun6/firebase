@@ -28,13 +28,4 @@ if st.button("결과 확인"):
         score += 50
     else:
         st.write("두 번째 답이 틀렸습니다!")
-    st.write(f"{score}점 입니다")
-    
-    name = st.text_input("이름을 입력해주세요")
-    st.session_state.name = name
-    
-    ref4 = db.reference()
-    print(ref4.get())
-    
-    ref4.update({name:score})
-    
+    st.write(f"{score}점 입니다")  
